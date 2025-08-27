@@ -1,2 +1,12 @@
 @import "tailwindcss";
+@import "@fontsource/el-messiri";
+@import "@fontsource/abeezee";
+
+.a {
+  font-family: "El Messiri", sans-serif;
+}   
+
+.b {
+  font-family: "ABeeZee", sans-serif;
+}   
 
