@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@fontsource/el-messiri";
+@import "@fontsource/abeezee";
+
+.a {
+  font-family: "El Messiri", sans-serif;
+}
+
+.b {
+  font-family: "ABeeZee", sans-serif;
+}
+
+.firstBg {
+  background-color: #f0f9ff;
+}
+
+.secondBg {
+  background-color: #ffffff;
+}
+
+.blueBg {
+  background-color: #0ea5e9;
+}
+
+.textBlue {
+  color: #0ea5e9;
+}
+
+.titleColor {
+  color: #0f172a;
+}
+
+.textColor {
+  color: #1e293b;
+}
