@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Button from "../other/Button";
 
 type Props = {};
 
@@ -89,13 +90,7 @@ export default function Header({}: Props) {
           alt="close"
         />
         <div className="mb-6">
-          <Link
-            onClick={() => setIsOpen(false)}
-            href={"/login"}
-            className="text-white text-[16px] font-[500] hover:bg-[#0e656a] transition-all duration-300 bg-[#021C1E] py-[8px] px-[20px] rounded-[6px]"
-          >
-            Вход
-          </Link>
+          <Button link={true} href="/login" text='Вход'/>
         </div>
         <nav className="flex-col items-center w-full max-w-[240px] flex gap-3">
           <Link

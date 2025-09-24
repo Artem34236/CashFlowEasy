@@ -9,7 +9,7 @@ export default function page({}: Props) {
       className={`firstBg xl:py-[20px] pb-[15px] xl:px-[60px] sm:px-[30px] px-[10px] pt-[10px] flex-grow ${marginForHeader}`}
     >
       <div className="bg-white p-5">
-        <div className="flex justify-between">
+        <div className="flex gap-10 justify-between w-full max-w-[600px] mx-auto">
           <div>
             <EmptyImage />
           </div>
@@ -18,8 +18,7 @@ export default function page({}: Props) {
               htmlFor="login"
               className="bg-blue-500 rounded-sm p-1 px-3 w-full flex justify-between gap-2 max-w-[300px]"
             >
-              <input
-                required
+              <input  
                 className="outline-0 text-white w-full"
                 placeholder="Имя"
                 type="text"
@@ -37,7 +36,8 @@ export default function page({}: Props) {
               className="bg-blue-500 rounded-sm p-1 px-3 w-full flex justify-between gap-2 max-w-[300px]"
             >
               <input
-                required
+              value={'*********'}
+                readOnly
                 className="outline-0 text-white w-full"
                 placeholder="Пароль"
                 type="text"

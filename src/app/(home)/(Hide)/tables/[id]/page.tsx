@@ -1,6 +1,7 @@
 "use client";
 
 import { marginForHeader } from "@/app/(home)/page";
+import Button from "@/components/other/Button";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
@@ -38,8 +39,8 @@ export default function Page({}: Props) {
         {/* cards */}
         <div className="flex flex-col gap-3 mt-3">
           {/* 1 card */}
-          <div className="textBlue flex flex-col sm:flex-row items-center gap-3 sm:border-0 border-b pb-3 sm:pb-0">
-            <div className="px-4 py-2 flex text-sm font-[600] items-center justify-between secondBg rounded-md sm:max-w-[280px] w-full">
+          <div className="textBlue flex flex-col items-center sm:flex-row gap-3 sm:border-0 border-b pb-3 sm:pb-0">
+            <div className="px-4 py-2 flex text-sm font-[600] items-stretch justify-between secondBg rounded-md sm:max-w-[280px] w-full">
               <p>Кола</p>
               <p className="text-xs sm:text-sm">12.08.2024</p>
             </div>
@@ -63,9 +64,7 @@ export default function Page({}: Props) {
               </div>
             </div>
 
-            <button className="b text-center text-xs font-[500] px-4 py-2 hover:bg-[#159097] bg-[#0EA5E9] rounded-md text-white transition cursor-pointer w-full sm:w-auto">
-              Добавить
-            </button>
+            <Button text="Добавить" />
           </div>
         </div>
       </div>
